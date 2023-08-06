@@ -1,0 +1,205 @@
+/*MY CSS RESET*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* END OF RESETTING*/
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 86%);
+    font-family: 'poppins', sans-serif;
+
+}
+
+
+main {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 375px;
+    border-radius: 15px 15px 80px 15px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.birth{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 375px;
+}
+
+.birth--form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 370px;
+  gap:3%;
+  margin-top: 2rem;  
+}
+
+input[type="number"]{
+  width: 100%;
+  border: 1px solid hsl(0, 0%, 59%);
+  color: black;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  max-width: 30%;
+}
+
+label{
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+}
+
+.submit--button{
+  display: flex;
+  direction: row;
+  justify-content: center;
+}
+
+hr.solid {
+
+  border-top: 3px solid #bbb;
+  rotate: 90deg;
+
+}
+
+button{
+  background-color: hsl(259, 100%, 65%);
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.birth--submit{
+  grid-column: 2;
+  grid-row: 2;
+  margin: 1rem;
+}
+
+section{
+    margin: 1rem;
+    margin-bottom: 2rem;
+    max-height: 30%;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-weight: bolder;
+}
+
+
+h1{
+  font-weight: 800;
+}
+
+.results--num{
+  color: hsl(259, 100%, 65%);
+}
+
+.results--years{
+    display:flex;
+    align-items: start;
+}
+
+.results--months{
+    display:flex;
+    
+}
+
+.results--days{
+    display:flex;
+    
+}
+

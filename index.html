@@ -8,32 +8,58 @@
   <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | Age calculator app</title>
-  <script src="calculations.js"></script>
 
 </head>
 <body>
 
   <main>
-    <form action="">
-      <input type="text" placeholder="DD" maxlength="2" size="2">
-      <input type="text" placeholder="MM" maxlength="2" size="2">
-      <input type="text" placeholder="YYYY" maxlength="4" size="4">
-      <button type="submit">Calculate My Age</button>
+     <!--Form -->
+    <form id="datesForm" class="birth">
+      <div class="birth--form">
+        <div class="wrapper">
+          <label for="birth--day">DAY</label>
+          <input id="day" class="birth--day" type="number" placeholder="DD" maxlength="2" size="2">
+        </div>
+        <div class="wrapper">
+          <label for="birth--month">MONTH</label>
+          <input id="month" class="birth--month" type="number" placeholder="MM" maxlength="2" size="2">
+        </div>
+        <div class="wrapper">
+          <label for="birth--year">YEAR</label>
+          <input id="year" class="birth--year" type="number" placeholder="YYYY" maxlength="4" size="4">
+        </div>
+      </div>
+      <div class="submit--button">
+        <hr class="solid">
+        <button class="birth--submit" type="submit"><img src="./assets/images/icon-arrow.svg" /></button>
+        <hr class="solid">
+      </div>
     </form>
-    <div>
-      
-    </div>
-    -- years
-    -- months
-    -- days
+    <script src="calculations.js"></script>
+    <!--results -->
+    <section class="results">
+      <div class="results--years">
+        <h1 id="r-year"class="results--num">0</h1>
+        <h1>Years</h1>
+      </div>
+      <div class="results--months">
+        <h1 id="r-month" class="results--num">0</h1>
+        <h1>Months</h1>
+      </div>
+      <div class="results--days">
+        <h1 id="r-day" class="results--num">0</h1>
+        <h1>Days</h1>
+      </div>
+    </section>
     
-
   </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Bruno Paris</a>.
+    </div>
+  </footer>
 
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
